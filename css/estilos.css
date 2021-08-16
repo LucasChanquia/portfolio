@@ -1,9 +1,12 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-h1{
+h1, #sobre-mi h2{
     color: #E20000;
     font-size: 36px;
+}
+.tamaño{
+    height: 338px;
 }
 p{
     color:#6a6a6a;
@@ -17,14 +20,17 @@ input, textarea{
     background-size: 100%;
     background-repeat: no-repeat;
 }
-#contacto h2{
-    font-size: 20px;
+#contacto h2 {
+    font-size: 18px;
     color: #6a6a6a;
+}
+#tecnologias h2{
+    font-size: 24px;
 }
 #contacto img {
     width: 200px;
 }
-#proyectos{
+#proyectos, #sobre-mi{
  
     background-image: url("../images/fondo-proyectos.png");
     background-size: 100%;
@@ -78,13 +84,27 @@ cursor: pointer;
     font-weight: 100;
     border-radius: 15px;
 }
-#proyectos .btn-rojo:hover {
+#sobre-mi .btn-rojo{
+    background-color: #E20000;
+    color: white;
+    font-weight: 300;
+    border-radius: 50px;
+    text-decoration: none;
+}
+#proyectos .btn-rojo:hover{
     background-color: #370a6d;
     color: white;
     font-weight: 100;
     border-radius: 15px;
 }
-#proyectos .nav-linkk{
+#sobre-mi .btn-rojo:hover{
+    background-color: #370a6d;
+    color: white;
+    font-weight: 300;
+    border-radius: 50px;
+    text-decoration: none;
+}
+#proyectos .nav-linkk, #sobre-mi .nav-linkk{
     color: white;
     text-decoration: none;
 }
@@ -131,10 +151,10 @@ footer .fa-github {
 .fa-github:hover{
     color: white;
 }
-#proyectos footer .fa-github{
+#proyectos footer .fa-github, #sobre-mi footer .fa-github{
     color: #ff4a49;
 }
-#proyectos .footer-text a, #proyectos .footer-text {
+#proyectos .footer-text a, #proyectos .footer-text , #sobre-mi .footer-text a, #sobre-mi .footer-text {
     color:#ff4a49;
 }
 #inicio .footer-text a, .footer-text{
@@ -167,6 +187,51 @@ footer .fa-linkedin-in{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#tecnologias .card{
+    width: 182px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+#tecnologias h3{
+    font-size: 14px;
+    color: #282828;
+    font-weight: 300;
+    text-align: center;
+}
+#tecnologias .color-gradiente{
+    background: rgba(184,37,20,1);
+    background: -moz-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(184,37,20,1)), color-stop(47%, rgba(214,52,30,1)), color-stop(70%, rgba(240,47,23,1)), color-stop(100%, rgba(240,47,23,1)));
+    background: -webkit-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -o-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -ms-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: linear-gradient(to right, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', endColorstr='#f02f17', GradientType=1 );
+}
+#experiencia h2, #formacion h2 {
+    font-weight: 400;
+    font-size: 24px;
+}
+#experiencia h3, #formacion h3 {
+    color: #6A6A6A;
+    font-size: 18px;
+    font-weight: 600;
+}
+#formacion h4 {
+    color: #E20000;
+    font-size: 17px;
+}
+#experiencia h5, #formacion h5 {
+    color: #6A6A6A;
+    font-size: 14px;
 }
 
 @media(max-width: 750px) {
